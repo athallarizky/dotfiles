@@ -69,3 +69,4 @@ if [[ -f "$HOME/.env.git" ]]; then
 fi
 
 ###
+export PATH=/Users/$USER/.local/bin:$PATH
