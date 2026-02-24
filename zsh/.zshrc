@@ -21,23 +21,10 @@ else
   export EDITOR='mvim'
 fi
 
-# load git environment variable
-if [[ -f "$HOME/.env.git" ]]; then
-  set -a
-  source "$HOME/.env.git"
-  set +a
-fi
-
-# load npm environment variable
-if [[ -f "$HOME/.env.npm" ]]; then
-  set -a
-  source "$HOME/.env.npm"
-  set +a
-fi
-
 # custom aliases
 alias zshconfig="zed ~/.zshrc"
 alias ohmyzsh="zed ~/.oh-my-zsh"
+alias z="zed --wait"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -48,6 +35,11 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
+
+###
+### Loading ENV variable
+###
+
 # load git environment variable
 if [[ -f "$HOME/.env.git" ]]; then
   set -a
@@ -61,3 +53,19 @@ if [[ -f "$HOME/.env.npm" ]]; then
   source "$HOME/.env.npm"
   set +a
 fi
+
+# load claude environment variable
+if [[ -f "$HOME/.env.claude" ]]; then
+  set -a
+  source "$HOME/.env.claude"
+  set +a
+fi
+
+# load git environment variable
+if [[ -f "$HOME/.env.git" ]]; then
+  set -a
+  source "$HOME/.env.git"
+  set +a
+fi
+
+###
