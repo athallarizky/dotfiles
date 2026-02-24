@@ -1,0 +1,7 @@
+{
+  "sessionDefaultSettings": {
+    "model": "gemini-3-flash-preview",
+    "reasoningEffort": "low"
+  },
+  "logoAnimation": "off"
+}
