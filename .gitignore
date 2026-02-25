@@ -2,6 +2,6 @@
 env/.env.*
 
 # allow example files
-!env/.env.*.examples
+!env/.env.*.example
 
 .gitignore
