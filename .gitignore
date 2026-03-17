@@ -4,4 +4,7 @@ env/.env.*
 # allow example files
 !env/.env.*.example
 
+
 .gitignore
+temp_auto_push.bat
+temp_interactive_push.bat
