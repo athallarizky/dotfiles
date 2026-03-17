@@ -14,6 +14,11 @@
       ],
       "note": "Requires npx (Node.js) to be installed. In Mission mode, add '--isolated' manually to args to prevent session intervention",
       "disabled": false
+    },
+    "astro-docs": {
+      "type": "http",
+      "url": "https://mcp.docs.astro.build/mcp",
+      "disabled": false
     }
   }
 }
