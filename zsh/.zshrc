@@ -70,3 +70,25 @@ fi
 
 ###
 export PATH=/Users/$USER/.local/bin:$PATH
+
+# Added by Antigravity
+export PATH="/Users/athallarizky/.antigravity/antigravity/bin:$PATH"
+
+
+# Starship
+eval "$(starship init zsh)"
+
+
+# Setup separated configuration for claude code
+_claude_with_profile() {
+  export CLAUDE_CONFIG_DIR="$1"
+  command claude "${@:2}"
+}
+# Personal profile (default)
+claude() {
+  _claude_with_profile "$HOME/.claude" "$@"
+}
+# Second profile (zai)
+zai-claude() {
+  _claude_with_profile "$HOME/.zai-claude" "$@"
+}
